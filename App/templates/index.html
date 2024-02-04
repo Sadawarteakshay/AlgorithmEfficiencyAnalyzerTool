@@ -53,6 +53,21 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 102px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #04AA6D;} /* Green */
+        
     </style>
 </head>
 <body>
@@ -61,7 +76,8 @@
         <form id="inputForm">
             <label for="numbers">Enter numbers (comma-separated):</label>
             <input type="text" id="numbers" name="numbers" placeholder="e.g., 3, 1, 5, 2, 4"><br>
-            <label for="algorithms">Select sorting algorithms:</label><br>
+            <button class="button button1">(Or) Generate Random</button>
+           <h3>Select sorting algorithms:</h3>
             <input type="checkbox" id="bubble_sort" name="bubble_sort" value="bubble_sort">
             <label for="bubble_sort">Bubble Sort</label><br>
             <input type="checkbox" id="merge_sort" name="merge_sort" value="merge_sort">
