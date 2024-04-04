@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Efficiency Visualizer</title>
+</head>
+<body>
+    <input type="text" id="manualArrayInput" placeholder="Enter array elements separated by spaces">
+    <input type="number" id="arraySize" placeholder="Or enter size for random array">
+    <div>
+        <input type="checkbox" id="bubbleSort" name="algorithm" value="Bubble Sort">Bubble Sort<br>
+        <input type="checkbox" id="quickSort" name="algorithm" value="Quick Sort">Quick Sort<br>
+        <!-- Add more algorithms as needed -->
+    </div>
+    <button onclick="generateGraph()">Generate Graph</button>
+    <canvas id="runtimeChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script> <!-- Your JavaScript File -->
+</body>
+</html>
